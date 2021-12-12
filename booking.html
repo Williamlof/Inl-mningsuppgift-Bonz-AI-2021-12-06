@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <img src="assets/assets/logo/bonz.ai-logo-black_landscape.svg" alt="">
+            <div class="toggle">
+                <span class="iconify menu__btn" data-icon="dashicons:menu" data-width="40">
+                </span>
+            </div>
+    
+            <nav class="navbar">
+                <ul>
+                <li class="menu__item"><a href="index.html">Home</a><span class="iconify menu__icon" data-icon="akar-icons:home" data-width="40"></span></li>
+                <li class="menu__item"><a href="aboutus.html">Our rooms</a><span class="iconify menu__icon rooms" data-icon="fontisto:room" data-width="40"></span></li>
+                <li class="menu__item"><a href="booking.html">Booking</a><span class="iconify menu__icon" data-icon="uil:calender" data-width="40"></span></li>
+            </ul>
+            </nav>
+        </header>
+    
+        <main class="main__flex">
+    
+            <article class="form-container">
+                <h1>Make your reservation</h1>
+                <section class="form">
+                    <article>
+                    <label for="room">Room type</label>
+                    <select name="room-select" id="room">
+                        <option value="1">Luxury</option>
+                        <option value="2">Luxury+</option>
+                        <option value="3">Luxury Deluxe</option>
+                        <option value="4">Luxury Deluxe+</option>
+                    </select>
+                </article>
+                <article>
+                    <label for="arrival">Arrival</label>
+                    <input id="arrival" type="date">
+                </article>
+                <article>
+                    <label for="departure">Departure</label>
+                    <input id="departure" type="date">
+                </article>
+                <article>
+                    <label for="rooms">Number of rooms</label>
+                    <input class="tiny" id="rooms" type="number">
+                </article>
+                <article>
+                    <label for="adults">Number of adults</label>
+                    <input class="tiny" id="adults" type="number">
+                </article>
+                <article>
+                    <label for="children">Number of children</label>
+                    <input class="tiny" id="children" type="number">
+                </article>
+                    <article>
+                        <label for="name">Name</label>
+                        <input id="name" type="text">
+                    </article>
+                    <article>
+                        <label for="email">E-mail</label>
+                        <input id="email" type="email">
+                    </article>
+                </section>
+                <button class="btn btn--orange">Make Reservation</button>
+            </article>
+
+        </main>
+    
+        <footer class="footer">
+            <section class="footer">
+                <h1>Contact us</h1>
+                <p>You can't. We contact you if we deem you worthy.</p>
+            </section>
+            <section class="locations">
+                <h1>Our locations</h1>
+                <p>We will disclose our location upon purchase of a 14 week-stay to make sure you're not poor.</p>
+            </section>
+            <section class="work">
+                <h1>Work with us</h1>
+                <p>You can't, we don't staff humans</p>
+            </section>
+    
+            
+        </footer>
+    
+        </div>
+        <script src="https://code.iconify.design/2/2.1.0/iconify.min.js">
+    
+        </script>
+        <script>
+    
+            document.querySelector('.toggle')
+                .addEventListener('click', (e) => {
+                        document.querySelector('nav').classList.toggle('open')
+                })
+    
+        </script>
+</body>
+</html>
